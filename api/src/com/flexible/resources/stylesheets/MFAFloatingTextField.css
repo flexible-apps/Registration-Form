@@ -1,0 +1,51 @@
+.mfa-floating-text-field {
+  -fx-background-color: #fff;
+  -fx-border-color: #e8e6e6;
+  -fx-background-radius: 15 !important;
+  -fx-border-radius: 15 !important;
+  -fx-border-width: 1.5;
+  -fx-padding: 0 0 0 11;
+  -fx-effect: none;
+}
+.mfa-floating-text-field .mfa-box-text {
+  -fx-background-color: #fff;
+  -fx-padding: 0 7 !important;
+  -fx-translate-y: -9 !important;
+  -fx-translate-x: -2 !important;
+}
+.mfa-floating-text-field .mfa-box-text .mfa-floating-text {
+  -fx-fill: #DBDBE7;
+  -fx-font-family: "Google Sans Medium", arial, sans-serif;
+  -fx-font-size: 12 !important;
+  -fx-font-weight: 700 !important;
+}
+.mfa-floating-text-field .mfa-box-children {
+  -fx-translate-y: -7 !important;
+}
+.mfa-floating-text-field .mfa-box-children .text-field {
+  -fx-background-color: transparent !important;
+  -fx-border-color: transparent !important;
+  -fx-padding: 0 5 0 5 !important;
+  -fx-text-fill: #1F1F2F;
+  -fx-prompt-text-fill: #AFB0C3;
+  -fx-font-family: "Google Sans Medium", arial, sans-serif;
+  -fx-font-size: 12 !important;
+  -fx-font-weight: 400;
+}
+.mfa-floating-text-field:error {
+  -fx-border-color: rgba(255, 131, 103, 0.8);
+}
+.mfa-floating-text-field:error .mfa-box-text .mfa-floating-text {
+  -fx-fill: rgba(255, 131, 103, 0.8);
+}
+.mfa-floating-text-field:error .mfa-box-children .text-field {
+  -fx-text-fill: rgba(255, 131, 103, 0.8);
+}
+.mfa-floating-text-field:focus {
+  -fx-border-color: #6D27E8;
+}
+.mfa-floating-text-field:focus .mfa-box-text .mfa-floating-text {
+  -fx-fill: #6D27E8;
+}
+
+/*# sourceMappingURL=MFAFloatingTextField.css.map */

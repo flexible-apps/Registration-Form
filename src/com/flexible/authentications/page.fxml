@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.flexible.controls.shapes.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="500.0" maxWidth="800.0" minHeight="500.0" minWidth="800.0" prefHeight="500.0" prefWidth="800.0" styleClass="root" stylesheets="@../resource/style/authentications/theme.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flexible.authentications.PageController">
+   <children>
+      <HBox layoutX="85.0" layoutY="149.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="partLogin" HBox.hgrow="ALWAYS" />
+            <VBox fx:id="partRegister" layoutX="10.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <AnchorPane fx:id="slide" styleClass="slide-partition" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <MFARectangle fx:id="rectangle" prefHeight="400.0" rectangleHeight="500.0" rectangleWidth="400.0" translateX="400.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox fx:id="leftBox" alignment="CENTER" maxWidth="400.0" minWidth="400.0" prefHeight="200.0" prefWidth="300.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Welcome Back!" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="article" text="Enter your personal details to use all of app  feutures" textAlignment="CENTER" wrappingWidth="280.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <MFXButton fx:id="btnSlideSingIn" prefHeight="40.0" prefWidth="175.0" text="SING IN" />
+                     </children>
+                  </VBox>
+                  <VBox fx:id="rightBox" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxWidth="400.0" minWidth="400.0" prefHeight="0.0" prefWidth="300.0">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Hello, Fiend!" />
+                        <Text layoutX="154.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="article" text="Regesiter with you personal details to use oll of app features" textAlignment="CENTER" wrappingWidth="280.0">
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Text>
+                        <MFXButton fx:id="btnSlideSingUp" prefHeight="40.0" prefWidth="175.0" text="SING UP" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

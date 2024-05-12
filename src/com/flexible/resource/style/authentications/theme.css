@@ -1,0 +1,230 @@
+.root {
+  -fx-background-color: white !important;
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+}
+.root .progress-page-loader {
+  -fx-background-color: rgba(255, 255, 255, 0.95);
+}
+.root .success, .root .error {
+  -fx-background-color: white !important;
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+}
+.root .success .mfx-button, .root .error .mfx-button {
+  -fx-background-color: #f4f4f4 !important;
+  -fx-border-color: none !important;
+  -fx-background-radius: 100% !important;
+  -fx-border-radius: 100% !important;
+  -fx-border-width: 1.5 !important;
+  -fx-text-fill: #fff !important;
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: bold;
+}
+.root .success .mfx-button .mfx-ripple-generator, .root .error .mfx-button .mfx-ripple-generator {
+  -mfx-auto-clip: true !important;
+}
+.root .success .title, .root .error .title {
+  -fx-font-family: "Google Sans";
+  -fx-font-size: 14;
+  -fx-font-weight: bold;
+  -fx-fill: #5c6a6a !important;
+}
+.root .success .mfx-button .mfa-glyph, .root .error .mfx-button .mfa-glyph {
+  -fx-stroke: #000;
+}
+.root .success .article, .root .error .article {
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: bold;
+  -fx-fill: #5c6a6a !important;
+}
+.root .error .mfx-button {
+  -fx-background-color: #f4f4f4 !important;
+  -fx-border-color: none !important;
+  -fx-background-radius: 9 !important;
+  -fx-border-radius: 9 !important;
+  -fx-border-width: 1.5 !important;
+  -fx-text-fill: #555 !important;
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: bold;
+}
+.root .error .mfx-button .mfx-ripple-generator {
+  -mfx-auto-clip: true !important;
+}
+.root .slide-partition .mfa-rectangle {
+  -mfa-rectangle-fill: #6D27E8;
+  -mfa-rectangle-stroke-fill: none;
+  -mfa-rectangle-border-radius: 150 30 30 150;
+}
+.root .slide-partition .mfa-rectangle.reverse {
+  -mfa-rectangle-border-radius: 30 150 150 30;
+}
+.root .slide-partition .title {
+  -fx-font-family: "Google Sans";
+  -fx-font-size: 25;
+  -fx-font-weight: bold;
+  -fx-fill: #fff !important;
+}
+.root .slide-partition .mfx-button {
+  -fx-background-color: none !important;
+  -fx-border-color: #fff !important;
+  -fx-background-radius: 9 !important;
+  -fx-border-radius: 9 !important;
+  -fx-border-width: 1.5 !important;
+  -fx-text-fill: #fff !important;
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: bold;
+}
+.root .slide-partition .mfx-button .mfx-ripple-generator {
+  -mfx-auto-clip: true !important;
+}
+.root .slide-partition .mfx-button {
+  -fx-font-weight: 900 !important;
+  -fx-font-size: 11;
+}
+.root .slide-partition .article {
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 13px;
+  -fx-font-weight: bold;
+  -fx-fill: #fff !important;
+}
+.root.sing-in .title, .root.sing-up .title {
+  -fx-font-family: "Google Sans";
+  -fx-font-size: 23;
+  -fx-font-weight: bold;
+  -fx-fill: #5c6a6a !important;
+}
+.root.sing-in .box, .root.sing-up .box {
+  -fx-font-family: "Google Sans";
+  -fx-font-size: 11.5px;
+  -fx-fill: #f4f4f4 !important;
+}
+.root.sing-in .box .line, .root.sing-up .box .line {
+  -fx-background-color: #f4f4f4;
+  -fx-min-height: 1.5;
+  -fx-max-height: 1.5;
+}
+.root.sing-in .media .mfx-button, .root.sing-up .media .mfx-button {
+  -fx-border-color: #f4f4f4 !important;
+  -fx-background-color: none !important;
+  -fx-border-radius: 9;
+  -fx-border-width: 1.5;
+  -fx-text-fill: #5c6a6a !important;
+  -fx-font-family: "Google Sans";
+  -fx-font-size: 12px;
+  -fx-font-weight: bold;
+}
+.root.sing-in .media .mfx-button .mfx-ripple-generator, .root.sing-up .media .mfx-button .mfx-ripple-generator {
+  -mfx-auto-clip: true !important;
+}
+.root.sing-in .description, .root.sing-up .description {
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: bold;
+  -fx-fill: #657272 !important;
+}
+.root.sing-in .mfa-floating-password-field .mfx-password-field, .root.sing-up .mfa-floating-password-field .mfx-password-field {
+  -fx-border-width: 0 !important;
+  -fx-border-color: none !important;
+}
+.root.sing-in .mfa-floating-password-field .mfx-password-field .text-field, .root.sing-up .mfa-floating-password-field .mfx-password-field .text-field {
+  -fx-border-width: 0 !important;
+  -fx-border-color: none !important;
+}
+.root.sing-in .mfa-floating-password-field .mfa-glyph, .root.sing-up .mfa-floating-password-field .mfa-glyph {
+  -fx-stroke: #d5d4d4 !important;
+  -fx-fill: none !important;
+  -fx-stroke-width: 2 !important;
+}
+.root.sing-in .forget-text, .root.sing-up .forget-text {
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: bold;
+  -fx-fill: #657272 !important;
+}
+.root.sing-in .mfx-button, .root.sing-up .mfx-button {
+  -fx-background-color: #6D27E8 !important;
+  -fx-border-color: none !important;
+  -fx-background-radius: 9 !important;
+  -fx-border-radius: 9 !important;
+  -fx-border-width: 1.5 !important;
+  -fx-text-fill: #fff !important;
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: bold;
+}
+.root.sing-in .mfx-button .mfx-ripple-generator, .root.sing-up .mfx-button .mfx-ripple-generator {
+  -mfx-auto-clip: true !important;
+}
+.root.sing-in .mfx-checkbox {
+  -mfx-main: #DBDBE7 !important;
+  -mfx-secondary: #6D27E8;
+  -fx-text-fill: #657272 !important;
+  -fx-font-family: "Google Sans Medium";
+  -fx-font-size: 11.5px;
+  -fx-font-weight: 300;
+  -fx-font-smoothing-type: greey !important;
+}
+.root.sing-in .mfx-checkbox .box {
+  -fx-background-color: transparent;
+  -fx-background-radius: 3.2 !important;
+  -fx-border-radius: 3.2 !important;
+  -fx-border-color: -mfx-main !important;
+  -fx-border-width: 2 !important;
+  -fx-min-width: 17 !important;
+  -fx-min-height: 17 !important;
+  -fx-pref-width: 17 !important;
+  -fx-pref-height: 17 !important;
+  -fx-max-width: 17 !important;
+  -fx-max-height: 17 !important;
+}
+.root.sing-in .mfx-checkbox .box .mark {
+  visibility: hidden;
+  -mfx-color: white;
+  -mfx-description: "mfx-variant7-mark";
+  -mfx-size: 10 !important;
+}
+.root.sing-in .mfx-checkbox .ripple-container {
+  -fx-background-radius: 100%;
+  -fx-border-radius: 100%;
+  -fx-min-width: 35 !important;
+  -fx-min-height: 35 !important;
+  -fx-pref-width: 35 !important;
+  -fx-pref-height: 35 !important;
+  -fx-max-width: 35 !important;
+  -fx-max-height: 35 !important;
+}
+.root.sing-in .mfx-checkbox .ripple-container .mfx-ripple-generator {
+  -mfx-animation-speed: 1.5;
+  -mfx-ripple-color: derive(-mfx-main, 110%);
+  -mfx-ripple-radius: 16;
+  -mfx-auto-clip: true;
+  -fx-background-radius: 100% !important;
+  -fx-border-radius: 100% !important;
+}
+.root.sing-in .mfx-checkbox:selected .box, .root.sing-in .mfx-checkbox:indeterminate .box {
+  -fx-background-color: -mfx-secondary !important;
+  -fx-border-color: -mfx-secondary !important;
+}
+.root.sing-in .mfx-checkbox:selected .box .mark {
+  visibility: visible;
+}
+.root.sing-in .mfx-checkbox:selected:disabled .box, .root.sing-in .mfx-checkbox:indeterminate:disabled .box {
+  -fx-background-color: -mfx-secondary;
+  -fx-border-color: -mfx-secondary;
+}
+.root.sing-in .mfx-checkbox:indeterminate .box .mark {
+  visibility: visible;
+  -mfx-description: "mfx-minus";
+}
+.root.sing-in .mfx-checkbox .ripple-container .mfx-ripple-generator {
+  -mfx-animation-speed: 1.5;
+  -mfx-ripple-color: derive(-mfx-secondary, 110%);
+  -mfx-ripple-radius: 16;
+}
+
+/*# sourceMappingURL=theme.css.map */

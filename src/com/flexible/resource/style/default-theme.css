@@ -1,0 +1,23 @@
+.root {
+  -fx-background-color: #ffffff !important;
+}
+.root .text {
+  -fx-font-family: "Google Sans";
+  -fx-fill: #a29191;
+  -fx-font-size: 12;
+  -fx-font-weight: 700;
+}
+.root .mfx-password-field {
+  -fx-border-width: 0;
+}
+.root .mfx-password-field .mfa-glyph {
+  -fx-fill: none !important;
+  -fx-stroke: #555;
+  -fx-stroke-width: 2;
+  -fx-padding: 0 !important;
+}
+.root .mfx-password-field .text-field {
+  -fx-padding: 0 !important;
+}
+
+/*# sourceMappingURL=default-theme.css.map */

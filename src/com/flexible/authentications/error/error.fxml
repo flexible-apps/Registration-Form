@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="354.0" prefWidth="317.0" styleClass="error" stylesheets="@../../resource/style/authentications/theme.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flexible.authentications.error.ErrorController">
+   <children>
+      <VBox layoutX="80.0" layoutY="91.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" maxHeight="0.0" minHeight="20.0" prefHeight="0.0" prefWidth="432.0" />
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="iv" fitHeight="200.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true" scaleX="0.8" scaleY="0.8">
+                     <image>
+                        <Image url="@../../resource/pic/128.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Error Registration">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="message" layoutX="215.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="article" text="Error during registration process, Check the information and try again later." textAlignment="CENTER" wrappingWidth="250.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="50.0" minHeight="80.0" prefHeight="50.0" prefWidth="432.0">
+               <children>
+                  <MFXButton fx:id="btnCancel" maxWidth="1.7976931348623157E308" prefHeight="40.0" text="Cancel" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                  </MFXButton>
+               </children></HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.flexible.controls.glyph.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" prefHeight="380.0" prefWidth="340.0" styleClass="success" stylesheets="@../../resource/style/authentications/theme.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flexible.authentications.success.SuccessController">
+   <children>
+      <VBox layoutX="80.0" layoutY="91.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="432.0" visible="false">
+               <children>
+                  <MFXButton fx:id="btnCloser" contentDisplay="GRAPHIC_ONLY" maxHeight="30.0" maxWidth="30.0" minHeight="30.0" minWidth="30.0">
+                     <graphic>
+                        <MFAGlyph fill="#b99696" glyph="M17 7L7 17M7 7L17 17" stroke="#866363" />
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="15.0" top="10.0" />
+                     </HBox.margin>
+                  </MFXButton>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fx:id="iv" fitHeight="200.0" fitWidth="301.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../resource/pic/470.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Regsiteration Successfully">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="message" layoutX="215.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="article" text="You can now enjoy the paid version and get all the features." textAlignment="CENTER" wrappingWidth="250.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Text>
+               </children>
+            </VBox>
+            <HBox layoutX="10.0" layoutY="10.0" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="432.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

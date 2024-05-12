@@ -1,0 +1,41 @@
+.mfa-progress-indicator.progress-indicator:indeterminate .segment {
+  -fx-background-color: #6d27e8;
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment0 {
+  -fx-shape: "M49.8,8.2l-5.7,9.7c-1,1.6-3.1,2.2-4.7,1.2l0,0c-1.6-1-2.2-3.1-1.2-4.7l5.7-9.7c1-1.6,3.1-2.2,4.7-1.2l0,0 C50.2,4.5,50.7,6.6,49.8,8.2z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment1 {
+  -fx-shape: "M36,2.7L36,13.9c0,1.9-1.6,3.4-3.4,3.4h0c-1.9,0-3.4-1.6-3.4-3.4l0.1-11.2c0-1.9,1.6-3.4,3.4-3.4l0,0 C34.5-0.8,36,0.8,36,2.7z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment2 {
+  -fx-shape: "M21.3,4.7l5.5,9.7c0.9,1.6,0.4,3.7-1.3,4.7l0,0c-1.6,0.9-3.7,0.4-4.7-1.3l-5.5-9.7c-0.9-1.6-0.4-3.7,1.3-4.7l0,0 C18.3,2.5,20.4,3.1,21.3,4.7z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment3 {
+  -fx-shape: "M9.6,13.8l9.7,5.7c1.6,1,2.2,3.1,1.2,4.7l0,0c-1,1.6-3.1,2.2-4.7,1.2l-9.7-5.7c-1.6-1-2.2-3.1-1.2-4.7l0,0 C5.9,13.4,8,12.9,9.6,13.8z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment4 {
+  -fx-shape: "M4,27.6l11.2,0.1c1.9,0,3.4,1.6,3.4,3.4v0c0,1.9-1.6,3.4-3.4,3.4L4,34.4c-1.9,0-3.4-1.6-3.4-3.4l0,0 C0.6,29.1,2.1,27.6,4,27.6z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment5 {
+  -fx-shape: "M6.1,42.3l9.7-5.5c1.6-0.9,3.7-0.4,4.7,1.3l0,0c0.9,1.6,0.4,3.7-1.3,4.7l-9.7,5.5c-1.6,0.9-3.7,0.4-4.7-1.3l0,0 C3.9,45.3,4.4,43.2,6.1,42.3z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment6 {
+  -fx-shape: "M15.2,54l5.7-9.7c1-1.6,3.1-2.2,4.7-1.2l0,0c1.6,1,2.2,3.1,1.2,4.7l-5.7,9.7c-1,1.6-3.1,2.2-4.7,1.2l0,0 C14.8,57.7,14.2,55.6,15.2,54z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment7 {
+  -fx-shape: "M28.9,59.6L29,48.4c0-1.9,1.6-3.4,3.4-3.4h0c1.9,0,3.4,1.6,3.4,3.4l-0.1,11.2c0,1.9-1.6,3.4-3.4,3.4h0 C30.5,63,28.9,61.5,28.9,59.6z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment8 {
+  -fx-shape: "M43.7,57.5l-5.5-9.7c-0.9-1.6-0.4-3.7,1.3-4.7l0,0c1.6-0.9,3.7-0.4,4.7,1.3l5.5,9.7c0.9,1.6,0.4,3.7-1.3,4.7l0,0 C46.7,59.8,44.6,59.2,43.7,57.5z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment9 {
+  -fx-shape: "M55.4,48.4l-9.7-5.7c-1.6-1-2.2-3.1-1.2-4.7l0,0c1-1.6,3.1-2.2,4.7-1.2l9.7,5.7c1.6,1,2.2,3.1,1.2,4.7l0,0 C59.1,48.8,57,49.4,55.4,48.4z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment10 {
+  -fx-shape: "M60.9,34.7l-11.2-0.1c-1.9,0-3.4-1.6-3.4-3.4v0c0-1.9,1.6-3.4,3.4-3.4L61,27.8c1.9,0,3.4,1.6,3.4,3.4v0 C64.4,33.1,62.8,34.7,60.9,34.7z";
+}
+.mfa-progress-indicator.progress-indicator:indeterminate .segment11 {
+  -fx-shape: "M58.9,20l-9.7,5.5c-1.6,0.9-3.7,0.4-4.7-1.3l0,0c-0.9-1.6-0.4-3.7,1.3-4.7l9.7-5.5c1.6-0.9,3.7-0.4,4.7,1.3v0 C61.1,16.9,60.6,19,58.9,20z";
+}
+
+/*# sourceMappingURL=MFAProgressIndicator.css.map */

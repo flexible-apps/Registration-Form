@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.flexible.controls.fields.*?>
+<?import io.github.palexdev.materialfx.controls.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="400.0" stylesheets="@../../resource/style/authentications/theme.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flexible.authentications.register.RegisterController">
+   <children>
+      <VBox layoutX="52.0" layoutY="65.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" maxHeight="100.0" minHeight="100.0" prefHeight="99.0" prefWidth="400.0">
+               <children>
+                  <VBox alignment="BOTTOM_LEFT" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Text fx:id="textSingIn" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title" text="Create Account" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="description" text="Register with Google ot create a new account." wrappingWidth="250.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="68.0" minHeight="40.0" prefHeight="68.0" prefWidth="400.0" styleClass="media">
+               <children>
+                  <MFXButton fx:id="btnGoogleRegistration" graphicTextGap="7.0" maxHeight="45.0" maxWidth="1.7976931348623157E308" minHeight="45.0" prefHeight="27.0" prefWidth="252.0" text="Register with Google" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../resource/pic/google_25px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MFXButton>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="400.0" styleClass="box">
+               <children>
+                  <Pane maxHeight="1.0" minHeight="1.0" prefHeight="1.0" prefWidth="200.0" styleClass="line" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Or">
+                     <HBox.margin>
+                        <Insets left="3.0" right="3.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Pane layoutX="10.0" layoutY="10.0" maxHeight="1.0" minHeight="1.0" prefHeight="1.0" prefWidth="200.0" styleClass="line" />
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="140.0" prefWidth="400.0">
+               <children>
+                  <MFAFloatingTextField fx:id="fieldUsername" floatingText="Username" promptText="Entrer your username">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" />
+                     </VBox.margin>
+                  </MFAFloatingTextField>
+                  <MFAFloatingTextField fx:id="fieldEmail" floatingText="Email" layoutX="50.0" layoutY="10.0" promptText="Enter your email">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" top="15.0" />
+                     </VBox.margin>
+                  </MFAFloatingTextField>
+                  <MFAFloatingPasswordField fx:id="fieldPassword" floatingText="Password" promptText="Enter your password">
+                     <VBox.margin>
+                        <Insets left="40.0" right="40.0" top="15.0" />
+                     </VBox.margin>
+                  </MFAFloatingPasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="382.0" maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="400.0">
+               <children>
+                  <MFXButton fx:id="btnRegister" buttonType="RAISED" prefHeight="50.0" prefWidth="200.0" text="Register" translateY="-10.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="root" />
+      <String fx:value="sing-up" />
+   </styleClass>
+</AnchorPane>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.flexible.controls.fields.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="root" prefHeight="300.0" prefWidth="400.0" styleClass="root" stylesheets="@../resource/style/main.css" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.flexible.main.Controller">
+   <children>
+      <MFAFloatingTextField fx:id="fieldUsername" floatingText="Username" layoutX="125.0" layoutY="76.0" />
+      <MFAFloatingTextField fx:id="fieldPassword" floatingText="Password" layoutX="125.0" layoutY="150.0" />
+   </children>
+</AnchorPane>

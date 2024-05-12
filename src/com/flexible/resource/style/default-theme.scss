@@ -1,0 +1,24 @@
+.root {
+  -fx-background-color: #ffffff!important;
+
+  .text {
+    -fx-font-family: "Google Sans";
+    -fx-fill: #a29191;
+    -fx-font-size: 12;
+    -fx-font-weight: 700;
+  }
+
+  .mfx-password-field {
+    -fx-border-width: 0;
+    .mfa-glyph {
+      -fx-fill: none!important;
+      -fx-stroke: #555;
+      -fx-stroke-width: 2;
+      -fx-padding: 0!important;
+    }
+
+    & .text-field {
+      -fx-padding: 0!important;
+    }
+  }
+}

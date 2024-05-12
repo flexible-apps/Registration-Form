@@ -1,0 +1,246 @@
+@mixin title($font-size: 23, $fill: #5c6a6a) {
+  .title {
+    -fx-font-family: "Google Sans";
+    -fx-font-size: $font-size;
+    -fx-font-weight: bold;
+    -fx-fill: $fill !important;
+  }
+}
+
+@mixin btn($bg-color:#6D27E8, $border-color:none,  $border-width: 1.5, $radius:9, $text-fill: #fff) {
+  & .mfx-button {
+    -fx-background-color: $bg-color!important;
+    -fx-border-color: $border-color!important;
+    -fx-background-radius: $radius!important;
+    -fx-border-radius: $radius!important;
+    -fx-border-width: $border-width!important;
+    -fx-text-fill: $text-fill !important;
+    -fx-font-family: "Google Sans Medium";
+    -fx-font-size: 11.5px;
+    -fx-font-weight: bold;
+
+    & .mfx-ripple-generator {
+      -mfx-auto-clip: true!important;
+
+    }
+  }
+}
+
+.root {
+  -fx-background-color: white !important;
+  -fx-background-radius: 30;
+  -fx-border-radius: 30;
+
+  & .progress-page-loader {
+    -fx-background-color: rgba(255,255,255,.95);
+  }
+
+  & .success, & .error {
+    -fx-background-color: white !important;
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+
+    @include btn($bg-color:#f4f4f4, $border-color:none,  $border-width: 1.5, $radius:100%, $text-fill: #fff);
+    @include title($font-size: 14, $fill: #5c6a6a);
+    .mfx-button {
+      .mfa-glyph{
+        -fx-stroke: #000;
+      }
+    }
+
+    & .article {
+      -fx-font-family: "Google Sans Medium";
+      -fx-font-size: 11.5px;
+      -fx-font-weight: bold;
+      -fx-fill: #5c6a6a !important;
+    }
+  }
+
+  & .error {
+    @include btn($bg-color:#f4f4f4, $border-color:none,  $border-width: 1.5, $radius:9, $text-fill: #555);
+  }
+
+  & .slide-partition {
+    & .mfa-rectangle {
+      -mfa-rectangle-fill: #6D27E8;
+      -mfa-rectangle-stroke-fill: none;
+      -mfa-rectangle-border-radius: 150 30 30 150;
+
+      &.reverse {
+        -mfa-rectangle-border-radius: 30 150 150 30;
+      }
+    }
+
+    @include title(25, #fff);
+    @include btn(none, #fff, 1.5, 9, #fff);
+
+    .mfx-button {
+      -fx-font-weight: 900 !important;
+      -fx-font-size: 11;
+    }
+
+
+    & .article {
+      -fx-font-family: "Google Sans Medium";
+      -fx-font-size: 13px;
+      -fx-font-weight: bold;
+      -fx-fill: #fff !important;
+    }
+  }
+
+  &.sing-in, &.sing-up {
+    @include title();
+
+    .box {
+      -fx-font-family: "Google Sans";
+      -fx-font-size: 11.5px;
+      -fx-fill: #f4f4f4 !important;
+
+      .line {
+        -fx-background-color: #f4f4f4;
+        -fx-min-height: 1.5;
+        -fx-max-height: 1.5;
+      }
+    }
+
+
+    .media {
+      .mfx-button {
+        -fx-border-color: #f4f4f4 !important;
+        -fx-background-color: none !important;
+        -fx-border-radius: 9;
+        -fx-border-width: 1.5;
+        -fx-text-fill: #5c6a6a !important;
+        -fx-font-family: "Google Sans";
+        -fx-font-size: 12px;
+        -fx-font-weight: bold;
+
+        .mfx-ripple-generator {
+          -mfx-auto-clip: true !important;
+        }
+
+        //.mfa-glyph {
+        //  -fx-stroke: none;
+        //  -fx-stroke-width: 1.5;
+        //}
+      }
+    }
+
+    & .description {
+      -fx-font-family: "Google Sans Medium";
+      -fx-font-size: 11.5px;
+      -fx-font-weight: bold;
+      -fx-fill: #657272 !important;
+    }
+
+    & .mfa-floating-password-field {
+      & .mfx-password-field {
+        -fx-border-width: 0 !important;
+        -fx-border-color: none !important;
+
+        & .text-field {
+          -fx-border-width: 0 !important;
+          -fx-border-color: none !important;
+        }
+      }
+
+      & .mfa-glyph {
+        -fx-stroke: #d5d4d4 !important;
+        -fx-fill: none!important;
+        -fx-stroke-width: 2!important;
+      }
+    }
+
+
+
+    & .forget-text {
+      -fx-font-family: "Google Sans Medium";
+      -fx-font-size: 11.5px;
+      -fx-font-weight: bold;
+      -fx-fill: #657272 !important;
+    }
+
+    @include btn();
+  }
+
+  &.sing-in {
+    .mfx-checkbox {
+      -mfx-main: #DBDBE7 !important; //#DBDBE7
+      -mfx-secondary: #6D27E8;
+      -fx-text-fill: #657272 !important;
+      -fx-font-family: "Google Sans Medium";
+      -fx-font-size: 11.5px;
+      -fx-font-weight: 300;
+      -fx-font-smoothing-type: greey !important;
+
+      & .box {
+        -fx-background-color: transparent;
+        -fx-background-radius: 3.2 !important;
+        -fx-border-radius: 3.2 !important;
+        -fx-border-color: -mfx-main !important;
+        -fx-border-width: 2 !important;
+        -fx-min-width: 17 !important;
+        -fx-min-height: 17 !important;
+        -fx-pref-width: 17 !important;
+        -fx-pref-height: 17 !important;
+        -fx-max-width: 17 !important;
+        -fx-max-height: 17 !important;
+
+        & .mark {
+          visibility: hidden;
+          -mfx-color: white;
+          -mfx-description: "mfx-variant7-mark";
+          -mfx-size: 10 !important;
+        }
+      }
+
+      & .ripple-container {
+        -fx-background-radius: 100%;
+        -fx-border-radius: 100%;
+        -fx-min-width: 35 !important;
+        -fx-min-height: 35 !important;
+        -fx-pref-width: 35 !important;
+        -fx-pref-height: 35 !important;
+        -fx-max-width: 35 !important;
+        -fx-max-height: 35 !important;
+
+        & .mfx-ripple-generator {
+          -mfx-animation-speed: 1.5;
+          -mfx-ripple-color: derive(-mfx-main, 110%);
+          -mfx-ripple-radius: 16;
+          -mfx-auto-clip: true;
+          -fx-background-radius: 100% !important;
+          -fx-border-radius: 100% !important;
+        }
+      }
+
+      &:selected .box,
+      &:indeterminate .box {
+        -fx-background-color: -mfx-secondary !important;
+        -fx-border-color: -mfx-secondary !important;
+      }
+
+      &:selected .box .mark {
+        visibility: visible;
+      }
+
+      &:selected:disabled .box,
+      &:indeterminate:disabled .box {
+        -fx-background-color: -mfx-secondary;
+        -fx-border-color: -mfx-secondary;
+      }
+
+      &:indeterminate .box .mark {
+        visibility: visible;
+        -mfx-description: "mfx-minus";
+      }
+
+      & .ripple-container .mfx-ripple-generator {
+        -mfx-animation-speed: 1.5;
+        -mfx-ripple-color: derive(-mfx-secondary, 110%);
+        -mfx-ripple-radius: 16;
+      }
+    }
+  }
+}
+
